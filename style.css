@@ -1,0 +1,116 @@
+*{
+    color: lime;
+    margin: 0;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    justify-content: space-evenly;
+    font-family: "Indie Flower", cursive;
+    font-size: 120%;
+}
+script, title{display: none;}
+.outline-patern{
+    outline-width: 1%;
+    outline-style: solid;
+    outline-color: #ffffff;
+}
+body{
+    background-image: url("./src/gravellybackground.jpg");
+    background-size: contain;
+    background-repeat: repeat;
+    align-items: center;
+}
+section{
+    background-image: url("./src/dirtybricks.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    margin-top: 1%;
+    *{justify-content: flex-start;}
+}
+header{
+    width: 90%;
+    margin: 0.5% 0 2% 0;
+    div{
+        width: 100%;
+        height: 0.1%;
+        background-color: lime;
+        h1{
+            margin: 1px 10% 1px 1px;
+            color: #ffffff;
+            box-sizing: border-box;
+         }
+         img{
+            position: absolute;
+            top: 39%;
+            left: 70%;
+         }
+       }
+        li{color: #ffffff;}
+}
+header::after{
+    content: url("./src/vineImg.png");
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+main{
+     div{
+    img{
+        background-color: black;
+        margin: 10% 5% 0 5%;
+    }
+   }
+   p{margin: 10% 5% 0 0;}
+}
+.row{flex-direction: row;}
+@media screen and (max-width: 820px) {
+    *{font-size: 100%;}
+    header{
+        margin: 0.5% 0 20% 0;
+        div img{display: none;}
+           ul{
+            position: relative;
+            top: 35%;
+            left: 0;
+            right: 5cm;
+        }
+    }
+    img{
+        width: 120%;
+        margin: 0 1% 30% 3%;
+    }
+    .outline-patern{outline-width: 0.1cap;}
+    }
+/* Media query para telas menores, até 480px (celulares) */
+@media screen and (max-width: 480px) {
+    * {
+        font-size: 90%;
+        padding: 2%;
+    }
+    header h1 {
+        font-size: 1.5em;
+        margin: 1em 5%;
+    }
+    ul {
+        font-size: 0.9em;
+        padding-left: 2%;
+    }
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    img {
+        width: 90%;
+        margin: 5% auto;
+    }
+    p {
+        margin: 5% 2%;
+        font-size: 1em;
+    }
+    section {
+        width: 100%;
+        padding: 2%;
+    }
+}
